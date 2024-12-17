@@ -22,7 +22,7 @@ configparser==3.8.1
 cryptography==37.0.4
 decorator==4.4.2
 EasyProcess==1.1
-emoji==1.7.0
+emoji
 et_xmlfile==2.0.0
 exceptiongroup==1.2.2
 fastapi==0.115.6
