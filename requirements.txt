@@ -15,7 +15,8 @@ certifi==2022.6.15
 cffi==1.15.1
 chardet==3.0.4
 charset-normalizer==2.0.12
-clarifai
+clarifai==9.7.1
+clarifai-grpc==10.11.2
 click==8.1.7
 configparser==3.8.1
 cryptography==37.0.4
@@ -52,7 +53,7 @@ multidict==6.0.4
 numpy==2.2.0
 openai==0.28.0
 openpyxl==3.1.5
-ortools
+ortools==9.4.1874
 outcome==1.2.0
 packaging==21.3
 pandas==2.1.1
@@ -64,7 +65,7 @@ pinecone-plugin-interface==0.0.7
 pluggy==1.0.0
 plyer==2.0.0
 proglog==0.1.10
-protobuf>=3.20,<5
+protobuf==3.20.3
 py==1.11.0
 pycparser==2.21
 pydantic==2.10.3
@@ -76,6 +77,7 @@ PySocks==1.7.1
 pytest==7.1.2
 python-dateutil==2.8.2
 python-dotenv==1.0.1
+python-rapidjson==1.20
 python-telegram-bot==13.13
 pytz==2022.1
 pytz-deprecation-shim==0.1.0.post0
@@ -102,6 +104,7 @@ tornado==6.2
 tqdm==4.67.1
 trio==0.21.0
 trio-websocket==0.9.2
+tritonclient==2.34.0
 types-pytz==2024.2.0.20241003
 typing_extensions==4.12.2
 tzdata==2022.1
