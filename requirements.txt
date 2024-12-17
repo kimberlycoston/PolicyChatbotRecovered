@@ -30,7 +30,7 @@ Flask==3.1.0
 frozenlist==1.4.0
 future==0.18.2
 googleapis-common-protos==1.56.4
-grpcio==1.47.0
+grpcio==1.47.0 --only-binary=:all:
 gunicorn==23.0.0
 h11==0.13.0
 huepy==1.2.1
@@ -61,6 +61,7 @@ Pillow==9.1.1
 pinecone-client==5.0.1
 pinecone-plugin-inference==1.1.0
 pinecone-plugin-interface==0.0.7
+pip==24.3.1
 pluggy==1.0.0
 plyer==2.0.0
 proglog==0.1.10
