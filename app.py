@@ -35,11 +35,11 @@ def query_pinecone(question):
     query_embedding = response['data'][0]['embedding']
     
     # Query Pinecone
-    results = index.query(vector=query_embedding, top_k=5, include_metadata=True)
+    results = index.query(vector=query_embedding, top_k=10, include_metadata=True)
     return results
 
 def generate_answer(question, context_chunks):
-    context = "\n".join([f"Chunk {i + 1}: {chunk['metadata']['text']}" for i, chunk in enumerate(context_chunks)])
+    context = "\n".join([f"Chunk {i + 1}: {chunk['metadata']['text']}" for i, chunk in enumerate(results['matches'])])
     prompt = f"""
     You are a helpful assistant. Use ONLY the provided policy documents to answer the question below. Start each answer with "Based on (Insert Policy Name) on Page (Insert Page Number),..." If you cannot answer it with the provided documents, state that you are unable to provide an answer based on the provided policies.
     Context:
