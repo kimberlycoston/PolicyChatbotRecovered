@@ -39,7 +39,7 @@ def query_pinecone(question):
     return results
 
 def generate_answer(question, context_chunks):
-    context = "\n".join([f"Chunk {i + 1}: {chunk['metadata']['text']}" for i, chunk in enumerate(results['matches'])])
+    context = "\n".join([f"Chunk {i + 1}: {chunk['metadata']['text']}" for i, chunk in enumerate(context_chunks)])
     prompt = f"""
     You are a helpful assistant. Use ONLY the provided policy documents to answer the question below. Start each answer with "Based on (Insert Policy Name) on Page (Insert Page Number),..." If you cannot answer it with the provided documents, state that you are unable to provide an answer based on the provided policies.
     Context:
